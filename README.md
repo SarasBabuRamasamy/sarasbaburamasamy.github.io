@@ -8,3 +8,9 @@ You can view the live site here: [https://sarasbaburamasamy.github.io/sarasbabur
 
 ## 📁 Project Structure
 ...
+
+## ⚖️ License
+
+This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
+
+CC BY-NC 4.0
