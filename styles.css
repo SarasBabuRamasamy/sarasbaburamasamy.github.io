@@ -116,3 +116,62 @@ footer {
     padding: 15px;
     margin-top: 30px;
 }
+#chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    font-family: 'Roboto', sans-serif;
+}
+
+#chat-toggle {
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#chatbox {
+    display: none;
+    flex-direction: column;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 300px;
+    max-height: 400px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    padding: 10px;
+}
+
+#chatlog {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    max-height: 250px;
+}
+
+#chatlog p {
+    margin: 5px 0;
+}
+
+#userInput {
+    width: 70%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#chatbox button {
+    width: 25%;
+    padding: 5px;
+    background: gold;
+    color: navy;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
