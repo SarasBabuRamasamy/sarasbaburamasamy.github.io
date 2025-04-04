@@ -94,9 +94,9 @@ function toggleChat() {
     chatbox.style.display = chatbox.style.display === "flex" ? "none" : "flex";
 
     if (!initialized) {
-        botResponse("👋 Hi there! Welcome to my portfolio.");
+        botResponse("👋 Hi! Welcome to my profile");
         setTimeout(() => {
-            botResponse("What are you interested in? Projects, resume, or booking a meeting?");
+            botResponse("This is a simple bot that navigates you to my Projects, resume, or book a meeting page. What are you interested in?");
         }, 1000);
         initialized = true;
     }
@@ -124,7 +124,7 @@ function appendMessage(sender, text) {
 }
 
 function botResponse(text) {
-    appendMessage("🤖 Bot", text);
+    appendMessage("🤖 Rambot", text);
 }
 
 function processInput(input) {
