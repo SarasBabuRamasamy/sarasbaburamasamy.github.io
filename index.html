@@ -85,6 +85,61 @@
     </div>
     <button id="chat-toggle" onclick="toggleChat()">💬</button>
     </div>
+
+    <script>
+let initialized = false;
+
+function toggleChat() {
+    const chatbox = document.getElementById("chatbox");
+    chatbox.style.display = chatbox.style.display === "flex" ? "none" : "flex";
+
+    if (!initialized) {
+        botResponse("👋 Hi there! Welcome to my portfolio.");
+        setTimeout(() => {
+            botResponse("What are you interested in? Projects, resume, or booking a meeting?");
+        }, 1000);
+        initialized = true;
+    }
+}
+
+function handleUserInput() {
+    const inputField = document.getElementById("userInput");
+    const message = inputField.value.trim();
+    if (!message) return;
+
+    appendMessage("🧑‍💻 You", message);
+    inputField.value = "";
+
+    setTimeout(() => {
+        processInput(message.toLowerCase());
+    }, 600);
+}
+
+function appendMessage(sender, text) {
+    const chatlog = document.getElementById("chatlog");
+    const messageElem = document.createElement("p");
+    messageElem.innerHTML = `<strong>${sender}:</strong> ${text}`;
+    chatlog.appendChild(messageElem);
+    chatlog.scrollTop = chatlog.scrollHeight;
+}
+
+function botResponse(text) {
+    appendMessage("🤖 Bot", text);
+}
+
+function processInput(input) {
+    if (input.includes("project")) {
+        botResponse("Check out my projects here: [Projects](#portfolio)");
+    } else if (input.includes("resume")) {
+        botResponse("You can view or download my resume [here](#resume).");
+    } else if (input.includes("meeting") || input.includes("calendar") || input.includes("book")) {
+        botResponse("You can book a meeting here: <a href='https://calendly.com/yourusername/meeting' target='_blank'>📅 Schedule on Calendly</a>");
+    } else {
+        botResponse("I'm still learning! Try asking about my projects, resume, or booking a meeting.");
+    }
+}
+    </script>
+    
     
 </body>
 </html>
