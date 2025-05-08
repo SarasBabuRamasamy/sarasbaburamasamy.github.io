@@ -75,12 +75,13 @@ nav ul li a {
 }
 
 #about, #portfolio, #resume, #contact {
-    padding: 50px 20px;
+    padding: 100px 40px;
     text-align: center;
 }
 
 .about-container {
     display: flex;
+    text-align: left;
     align-items: center;
     justify-content: center;
     max-width: 800px;
@@ -88,8 +89,8 @@ nav ul li a {
 }
 
 .about-container img {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     margin-right: 20px;
 }
