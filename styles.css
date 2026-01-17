@@ -57,7 +57,17 @@ body{
 /* Hero */
 .hero{display:flex;gap:24px;align-items:center;padding:40px 0}
 .hero-content{flex:1}
-.hero-image img{width:120px;height:120px;object-fit:cover;border-radius:999px;box-shadow:var(--shadow)}
+/* Responsive profile image: scales between 72px and 160px using clamp */
+.hero-image img{
+  width: clamp(72px, 14vw, 160px); /* never smaller than 72px, scales with viewport, max 160px */
+  height: auto;
+  aspect-ratio: 1 / 1;               /* keep square ratio */
+  object-fit: cover;                 /* crop fill */
+  border-radius: 50%;                /* circular */
+  box-shadow: var(--shadow);
+  display: block;
+  margin: 0 auto;                    /* center if stacked */
+}
 
 .name{margin:0;font-size:1.6rem;letter-spacing:-0.02em}
 .role{margin-top:8px;color:var(--muted)}
