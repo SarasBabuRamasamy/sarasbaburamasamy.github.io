@@ -1,170 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saras's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Saras Babu Ramasamy — Data Specialist. Portfolio showcasing data architecture, analytics, ML, AI and robotics projects." />
+  <title>Saras Babu Ramasamy — Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Porfolio | Saras</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#Resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <section id="home" class="hero">
-        <h1>Saras Babu Ramasamy</h1>
-        <h2>Data Specialist</h2>
-        <p>Data Architecture & Analytics | Machine Learning | AI | Robotics | Computer Vision | OpenSource</p>
-        <a href="#portfolio" class="btn">View My Work</a>
-        <a href="resume.pdf" target="_blank" class="btn btn">Download CV</a>
-        <a href="https://calendly.com/saras-babu-93/15min?share_attribution=expiring_link" target="_blank" class="btn">Connect</a>
-    </section>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">Saras Ramasamy</a>
 
-    <section id="about" class="hero">
-        <h2>About</h2>
-        <div class="about-container">
-            <img src="profile.jpg" alt="Profile Picture">
-            
-            <p>Hello! 
-                <br>Welcome to my Portfolio Website & thanks for visiting!
-                <br>A little brief about me here: I like to analyse stuff, especially data among other things like coding and tinkering with tech. 
-                <br>I have degrees in Electrical and Electronics Engineering & in Computing, and am also a member in the BCS (British Computer Society), a chartered professional body for IT. 
-                <br>I love solving puzzles & problems, watching movies, and riding motorcycles. 
-                <br>I've put together this website to showcase some of my works that I think are worth sharing, but I'm still digging my archieve to re-frame the files to be publish worthy, or in other words this site is still in progress, so don't get disspointed if a page is empty I am simply making this site on the go. 
-                <br>Take a look, drop a message if you'd like to connect! 
-                
-            </p>
-            
-        </div>
-    </section>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
 
-    <section id="portfolio" class="hero">
-        <h2>Portfolio of Projects</h2>
-        <div class="portfolio-grid">
-            <div class="project-card">
-                <h3>Relational Database Design</h3>
-                <p>A database system for controlling lighting and temperature in a smart home</p>
-                <a href="../projects/project1/project1.html">View Details</a>
-            </div>
-            <div class="project-card">
-                <h3>Predictive Modelling</h3>
-                <p>Student Grade Prediction Using Machine Learning Regression</p>
-                <a href="../projects/project2/project2.html">View Details</a>
-            </div>
-            <div class="project-card">
-                <h3>Automotive control using Perceptron</h3>
-                <p>Controlling a VR line-follower using a single artificial neuron</p>
-                <a href="#">View Details</a>
-            </div>
-            <div class="project-card">
-                <h3>Indoor Navigation System</h3>
-                <p>A proof-of-concept for an indoor navigation system using ArcGIS</p>
-                <a href="../projects/project 4/project4.html">View Details</a>
-            </div>
-            <div class="project-card">
-                <h3>Robotic chathead</h3>
-                <p>Exploring the usecases of a robot head</p>
-                <a href="..projects/project 5/project5.html">View Details</a>
-            </div>
-            <div class="project-card">
-                <h3>Computer vision</h3>
-                <p>Project description..</p>
-                <a href="#">View Details</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="resume" class="hero">
-        <h2>Resume</h2>
-        <p>Download my CV from the link below.</p>
-        <a href="resume.pdf" target="_blank" class="btn">Download CV</a>
-    </section>
-
-    <section id="contact" class="hero">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:ram.saras@outlook.com" target="_blank">ram.saras@outlook.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/sarasramasamy/" target="_blank">linkedin.com/in/sarasramasamy</a></p>
-        <p>Phone: <a href="tel:+441303360120" target="_blank">+44-1303-360-120</a></p>
-        <p>GitHub: <a href="https://github.com/SarasBabuRamasamy"_blank">github.com/SarasBabuRamasamy</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Saras Babu Ramasamy. <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p></p>
-    </footer>
-
-    <div id="chatbot-container">
-    <div id="chatbox">
-        <div id="chatlog"></div>
-        <input type="text" id="userInput" placeholder="Ask anything about Saras..." />
-        <button onclick="handleUserInput()">Send</button>
+      <nav id="primaryNav" class="primary-nav" role="navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <button id="chat-toggle" onclick="toggleChat()">💬</button>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero container">
+      <div class="hero-content">
+        <h1 class="name">Saras Babu Ramasamy</h1>
+        <p class="role">Data Specialist — Data Architecture & Analytics · Machine Learning · Computer Vision</p>
+        <div class="cta-row">
+          <a class="btn" href="#portfolio">View Work</a>
+          <a class="btn ghost" href="resume.pdf" target="_blank" rel="noopener">Download CV</a>
+          <a class="btn outline" href="https://calendly.com/saras-babu-93/15min?share_attribution=expiring_link" target="_blank" rel="noopener">Book 15m</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="profile.jpg" alt="Saras Babu Ramasamy" loading="lazy" />
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>About</h2>
+      <p>
+        I analyse data, build data platforms, and develop ML solutions. I hold degrees in Electrical & Electronics Engineering and Computing, and I'm a BCS member. I enjoy solving problems, movies, and riding motorcycles.
+      </p>
+    </section>
+
+    <section id="portfolio" class="section container">
+      <h2>Selected Projects</h2>
+      <div class="grid projects-grid" role="list">
+        <article class="card" role="listitem">
+          <h3>Relational Database Design</h3>
+          <p>A database system for controlling lighting and temperature in a smart home.</p>
+          <a href="projects/project1/project1.html" class="card-link">Details →</a>
+        </article>
+
+        <article class="card" role="listitem">
+          <h3>Predictive Modelling</h3>
+          <p>Student grade prediction using machine learning regression.</p>
+          <a href="projects/project2/project2.html" class="card-link">Details →</a>
+        </article>
+
+        <article class="card" role="listitem">
+          <h3>Automotive Perceptron</h3>
+          <p>Controlling a VR line-follower using a single artificial neuron.</p>
+          <a href="projects/project3/project3.html" class="card-link">Details →</a>
+        </article>
+
+        <article class="card" role="listitem">
+          <h3>Indoor Navigation</h3>
+          <p>Proof-of-concept indoor navigation using ArcGIS.</p>
+          <a href="projects/project4/project4.html" class="card-link">Details →</a>
+        </article>
+      </div>
+      <p class="more-note">More projects available on request — or check my GitHub profile.</p>
+    </section>
+
+    <section id="resume" class="section container">
+      <h2>Resume</h2>
+      <p>Download a PDF of my CV:</p>
+      <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download CV</a>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:ram.saras@outlook.com">ram.saras@outlook.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/sarasramasamy/" target="_blank" rel="noopener">linkedin.com/in/sarasramasamy</a></li>
+        <li>Phone: <a href="tel:+441303360120">+44 1303 360 120</a></li>
+        <li>GitHub: <a href="https://github.com/SarasBabuRamasamy" target="_blank" rel="noopener">github.com/SarasBabuRamasamy</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Saras Babu Ramasamy · Built with HTML & CSS</p>
+      <p>This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a></p>
     </div>
+  </footer>
 
-    <script>
-let initialized = false;
+  <script>
+    // Simple mobile nav toggle and smooth scroll
+    (function () {
+      const navToggle = document.getElementById('navToggle');
+      const nav = document.getElementById('primaryNav');
+      navToggle.addEventListener('click', () => {
+        const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+        navToggle.setAttribute('aria-expanded', !expanded);
+        nav.classList.toggle('open');
+      });
 
-function toggleChat() {
-    const chatbox = document.getElementById("chatbox");
-    chatbox.style.display = chatbox.style.display === "flex" ? "none" : "flex";
-
-    if (!initialized) {
-        botResponse("👋 Hi! Welcome to my profile");
-        setTimeout(() => {
-            botResponse("This is a simple bot that navigates you to my Projects, resume, or book a meeting page. What are you interested in?");
-        }, 1000);
-        initialized = true;
-    }
-}
-
-function handleUserInput() {
-    const inputField = document.getElementById("userInput");
-    const message = inputField.value.trim();
-    if (!message) return;
-
-    appendMessage("🧑‍💻 You", message);
-    inputField.value = "";
-
-    setTimeout(() => {
-        processInput(message.toLowerCase());
-    }, 600);
-}
-
-function appendMessage(sender, text) {
-    const chatlog = document.getElementById("chatlog");
-    const messageElem = document.createElement("p");
-    messageElem.innerHTML = `<strong>${sender}:</strong> ${text}`;
-    chatlog.appendChild(messageElem);
-    chatlog.scrollTop = chatlog.scrollHeight;
-}
-
-function botResponse(text) {
-    appendMessage("🤖 Rambot", text);
-}
-
-function processInput(input) {
-    if (input.includes("project")) {
-        botResponse("Check out my projects here: [Projects](#portfolio)");
-    } else if (input.includes("resume")) {
-        botResponse("You can view or download my resume [here](#resume).");
-    } else if (input.includes("meeting") || input.includes("calendar") || input.includes("book")) {
-        botResponse("You can book a meeting here: <a href='https://calendly.com/yourusername/meeting' target='_blank'>📅 Schedule on Calendly</a>");
-    } else {
-        botResponse("I'm still learning! Try asking about my projects, resume, or booking a meeting.");
-    }
-}
-    </script>
-    
-    
+      // Smooth scroll for same-page anchors
+      document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', function (e) {
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            // close nav on small screens
+            nav.classList.remove('open');
+            navToggle.setAttribute('aria-expanded', 'false');
+          }
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
